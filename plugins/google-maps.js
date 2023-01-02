@@ -4,7 +4,7 @@ import * as VueGoogleMaps from "vue2-google-maps";
 Vue.config.productionTip = false;
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "AIzaSyAeeJmjRfPh0jw4uQ5iOKyw1RfFNSNs84A",
+    key: process.env.NUXT_ENV_GOOGLE_MAPS,
     libraries: "places",
   },
 });
