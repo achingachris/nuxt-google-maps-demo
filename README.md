@@ -16,3 +16,9 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
+
+## Package Used:
+
+### `vue2-google-maps`
+
+

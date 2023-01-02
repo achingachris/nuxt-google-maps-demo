@@ -11,19 +11,21 @@
       <br />
     </div>
     <br />
-    <gmap-map
-      :zoom="14"
-      :center="center"
-      style="width: 100%; height: 600px"
-      class="mb-5"
-    >
-      <gmap-marker
-        :key="index"
-        v-for="(m, index) in locationMarkers"
-        :position="m.position"
-        @click="center = m.position"
-      ></gmap-marker>
-    </gmap-map>
+    <div class="card">
+      <gmap-map
+        :zoom="14"
+        :center="center"
+        style="width: 100%; height: 600px"
+        class="mb-5"
+      >
+        <gmap-marker
+          :key="index"
+          v-for="(m, index) in locationMarkers"
+          :position="m.position"
+          @click="center = m.position"
+        ></gmap-marker>
+      </gmap-map>
+    </div>
   </div>
 </template>
 
